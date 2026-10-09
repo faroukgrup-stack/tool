@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>مجموعة فاروق للاستشارات والأعمال | للعملاء المشتركين</title>
+    <meta name="description" content="هذه الصفحة مخصصة للعملاء المشتركين لدى مجموعة فاروق للاستشارات والأعمال.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#b8860b">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon / Logo -->
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1e6u-DPTinDJl_Q9wW3QvGgzFbXO_2sXa">
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1e6u-DPTinDJl_Q9wW3QvGgzFbXO_2sXa">
+
+    <style>
+        :root {
+            --gold: #b8860b;
+            --gold-light: #d4b15a;
+            --gold-soft: rgba(184, 134, 11, 0.12);
+            --bg: #0a0d14;
+            --card: rgba(15, 20, 30, 0.85);
+            --text: #f0f4fa;
+            --muted: #9aa3b5;
+            --border: rgba(184, 134, 11, 0.22);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            min-height: 100%;
+            font-family: 'Tajawal', sans-serif;
+            background: radial-gradient(circle at 70% 25%, #151a26 0%, #0a0d14 55%, #07090e 100%);
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: -140px;
+            right: -140px;
+            width: 520px;
+            height: 520px;
+            background: radial-gradient(circle, rgba(184,134,11,0.07) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            animation: floatGlow 9s ease-in-out infinite;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: -120px;
+            left: -120px;
+            width: 420px;
+            height: 420px;
+            background: radial-gradient(circle, rgba(212,177,90,0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            animation: floatGlow 11s ease-in-out infinite reverse;
+        }
+
+        @keyframes floatGlow {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            40% { transform: translate(25px,-20px) scale(1.06); }
+            70% { transform: translate(-15px,15px) scale(0.96); }
+        }
+
+        .page-wrap {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 560px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 100%;
+            background: var(--card);
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 2.6rem 2rem 2.2rem;
+            text-align: center;
+            box-shadow: 0 22px 55px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(184,134,11,0.06);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 40px;
+            right: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), var(--gold-light), var(--gold), transparent);
+            border-radius: 0 0 3px 3px;
+            opacity: 0.85;
+        }
+
+        .logo-wrap {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 1.4rem;
+            border-radius: 24px;
+            background: rgba(184,134,11,0.08);
+            border: 1.5px solid rgba(184,134,11,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            box-shadow: 0 8px 28px rgba(184,134,11,0.15);
+        }
+
+        .logo-wrap img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .company-name {
+            font-family: 'Cairo', 'Alexandria', sans-serif;
+            font-size: 1.55rem;
+            font-weight: 900;
+            color: var(--gold-light);
+            line-height: 1.35;
+            margin-bottom: 0.35rem;
+            letter-spacing: -0.02em;
+        }
+
+        .company-sub {
+            font-size: 0.92rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .divider {
+            width: 70px;
+            height: 3px;
+            margin: 0 auto 1.5rem;
+            border-radius: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            background: rgba(184,134,11,0.12);
+            border: 1px solid rgba(184,134,11,0.28);
+            color: var(--gold-light);
+            font-size: 0.82rem;
+            font-weight: 700;
+            padding: 0.4rem 0.95rem;
+            border-radius: 50px;
+            margin-bottom: 1.15rem;
+        }
+
+        .badge i { font-size: 0.85rem; }
+
+        .message-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.65rem;
+        }
+
+        .message-body {
+            font-size: 1rem;
+            color: var(--muted);
+            line-height: 1.85;
+            max-width: 420px;
+            margin: 0 auto 1.6rem;
+        }
+
+        .message-body strong {
+            color: var(--gold-light);
+            font-weight: 700;
+        }
+
+        .info-box {
+            background: rgba(184,134,11,0.07);
+            border: 1px solid rgba(184,134,11,0.18);
+            border-radius: 16px;
+            padding: 1rem 1.15rem;
+            margin-bottom: 1.5rem;
+            text-align: right;
+            font-size: 0.9rem;
+            color: #c5cdd9;
+            line-height: 1.75;
+        }
+
+        .info-box i {
+            color: var(--gold);
+            margin-left: 0.35rem;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.45rem;
+            padding: 0.8rem 1.4rem;
+            border-radius: 50px;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            color: #111;
+            box-shadow: 0 6px 20px rgba(184,134,11,0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(184,134,11,0.55);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid rgba(184,134,11,0.4);
+            color: var(--gold-light);
+        }
+
+        .btn-outline:hover {
+            background: rgba(184,134,11,0.12);
+            border-color: var(--gold);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 1.75rem;
+            text-align: center;
+            font-size: 0.78rem;
+            color: #667080;
+            line-height: 1.7;
+        }
+
+        .footer span {
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        @media (max-width: 520px) {
+            .page-wrap { padding: 1rem; }
+            .card { padding: 2rem 1.25rem 1.8rem; border-radius: 22px; }
+            .logo-wrap { width: 90px; height: 90px; margin-bottom: 1.1rem; }
+            .company-name { font-size: 1.25rem; }
+            .message-title { font-size: 1.1rem; }
+            .message-body { font-size: 0.92rem; }
+            .btn { padding: 0.7rem 1.15rem; font-size: 0.85rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrap">
+        <div class="card">
+            <div class="logo-wrap">
+                <img src="https://lh3.googleusercontent.com/d/1e6u-DPTinDJl_Q9wW3QvGgzFbXO_2sXa" alt="شعار مجموعة فاروق للاستشارات والأعمال">
+            </div>
+
+            <h1 class="company-name">مجموعة فاروق للاستشارات والأعمال</h1>
+            <p class="company-sub"> · استشارات · أعمال · حلول</p>
+
+            <div class="divider"></div>
+
+            <div class="badge">
+                <i class="fas fa-lock"></i>
+                منطقة العملاء المشتركين
+            </div>
+
+            <h2 class="message-title">هذه الصفحة مخصصة للعملاء المشتركين</h2>
+            <p class="message-body">
+                الأدوات والصفحات المتاحة هنا مخصّصة فقط لـ<strong>العملاء المشتركين</strong> لدى
+                مجموعة فاروق للاستشارات والأعمال.
+                إذا كنت من عملائنا، يرجى استخدام الرابط الخاص الذي تم تزويدك به.
+            </p>
+
+            <div class="info-box">
+                <i class="fas fa-info-circle"></i>
+                إذا وصلت إلى هذه الصفحة بالخطأ أو تحتاج مساعدة للوصول إلى أدواتك،
+                تواصل مع فريق الدعم وسنساعدك فوراً.
+            </div>
+
+            <div class="actions">
+                <a href="mailto:info@faroukgrup.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i>
+                    تواصل معنا
+                </a>
+                <a href="https://wa.me/905000000000" class="btn btn-outline" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i>
+                    واتساب
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            جميع الحقوق محفوظة © 2026<br>
+            <span>مجموعة فاروق للاستشارات والأعمال</span> — إسطنبول، تركيا
+        </div>
+    </div>
+</body>
+</html>
